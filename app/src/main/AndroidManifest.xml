@@ -37,6 +37,17 @@
         <activity android:name=".MainActivity">
 
         </activity>
+        <activity android:name=".OneActivity">
+
+        </activity>
+        <activity android:name=".TwoActivity">
+
+        </activity>
+
+        <activity android:name=".ThreeActivity">
+
+        </activity>
+
     </application>
 
 </manifest>
