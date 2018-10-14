@@ -10,6 +10,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
@@ -68,9 +69,9 @@ public class EatOneAdapter extends BaseAdapter {
             convertView = inflater.inflate(R.layout.activity_f_s_t_item, null);
             viewHolder = new ViewHolder();
             viewHolder.iv_icon = (ImageView) convertView.findViewById(R.id.eatIcon);
-            viewHolder.tv_float = (TextView) convertView.findViewById(R.id.eatFloat);
+            viewHolder.tv_floot = (TextView) convertView.findViewById(R.id.eatFloat);
             viewHolder.tv_name = (TextView) convertView.findViewById(R.id.eatName);
-            viewHolder.tv_price = (TextView) convertView.findViewById(R.id.eatPrice);
+            viewHolder.tv_price = (TextView) convertView.findViewById(R.id.eatN);
             convertView.setTag(viewHolder);
 
             new Thread(new Runnable() {
@@ -91,7 +92,7 @@ public class EatOneAdapter extends BaseAdapter {
                     });
                 }
             }).start();
-            viewHolder.tv_float.setText(school);
+            viewHolder.tv_floot.setText(floot);
             viewHolder.tv_name.setText(name);
             viewHolder.tv_price.setText(desc);
 
@@ -113,7 +114,7 @@ public class EatOneAdapter extends BaseAdapter {
         TextView tv_sex;
         TextView tv_price;
         ImageView iv_icon;
-        TextView tv_float;
+        TextView tv_floot;
     }
     public Bitmap getPicture(String path){
         Bitmap bm=null;
